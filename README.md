@@ -46,3 +46,4 @@ return 0;
 ## OUTPUT:
 ![1c](https://github.com/user-attachments/assets/0d4cd048-66e0-4796-a2d3-1ed4880a088b)
 ## RESULT: 
+Hence,to use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption is done successfully
