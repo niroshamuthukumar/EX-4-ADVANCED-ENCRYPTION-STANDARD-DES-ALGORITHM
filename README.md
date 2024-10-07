@@ -10,5 +10,39 @@
   4. AES operates on a 4 × 4 column-major order array of bytes, termed the state
 
 ## PROGRAM: 
+```
+Nirosha M
+212223110032
+
+#include <stdio.h>
+#include <string.h>
+
+
+  void xor_encrypt_decrypt(char *input, char *key) {
+int input_len = strlen(input);
+int key_len = strlen(key);
+
+for (int i = 0; i < input_len; i++) {
+    input[i] = input[i] ^ key[i % key_len]; 
+}
+}
+
+int main() {
+char url[] = "https://lms2.ai.saveetha.in";
+char key[] = "Secret key"; 
+
+printf("Original URL: %s\n", url);
+
+
+xor_encrypt_decrypt(url, key);
+printf("Encrypted URL: %s\n", url);
+
+xor_encrypt_decrypt(url, key);
+printf("Decrypted URL: %s\n", url);
+
+return 0;
+}
+```
 ## OUTPUT:
+![1c](https://github.com/user-attachments/assets/0d4cd048-66e0-4796-a2d3-1ed4880a088b)
 ## RESULT: 
